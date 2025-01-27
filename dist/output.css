@@ -741,6 +741,10 @@ video {
   max-width: 36rem;
 }
 
+.max-w-5xl {
+  max-width: 64rem;
+}
+
 .origin-bottom-left {
   transform-origin: bottom left;
 }
