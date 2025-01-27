@@ -5,6 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
     <link href="src/output.css" rel="stylesheet" />
+
+    <script>
+      document.documentElement.classList.toggle(
+        "dark",
+        localStorage.currentTheme === "dark" ||
+          (!("theme" in localStorage) &&
+            window.matchMedia("(prefers-color-scheme: dark)").matches),
+      );
+    </script>
   </head>
 
   <body>

@@ -39,7 +39,17 @@ const html = document.querySelector("html");
 darkToggle.addEventListener("click", function () {
   if (darkToggle.checked) {
     html.classList.add("dark");
+    localStorage.theme = "dark";
   } else {
     html.classList.remove("dark");
+    localStorage.theme = "light";
   }
 });
+
+// pindahkan posisi toggle sesuai mode
+document.documentElement.classList.toggle(
+  "dark",
+  localStorage.currentTheme === "dark" ||
+    (!("theme" in localStorage) &&
+      window.matchMedia("(prefers-color-scheme: dark)").matches),
+);
