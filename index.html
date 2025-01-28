@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" class="scroll-smooth" class="dark">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -19,94 +19,94 @@
   <body>
     <!-- Header start -->
     <header
-      class="absolute top-0 left-0 z-10 flex w-full items-center bg-transparent"
+      class="top-0 left-0 z-10 absolute flex items-center bg-transparent w-full"
     >
-      <div class="container mx-auto px-4">
-        <div class="relative flex items-center justify-between">
+      <div class="mx-auto px-4 container">
+        <div class="relative flex justify-between items-center">
           <div class="px-4">
-            <a href="#home" class="block py-6 text-lg font-bold text-sky-400"
+            <a href="#home" class="block py-6 font-bold text-lg text-sky-400"
               >AZAMILINK</a
             >
           </div>
-          <div class="flex items-center justify-center px-4">
+          <div class="flex justify-center items-center px-4">
             <button
               id="hamburger"
               name="hamburger"
               type="button"
-              class="absolute right-4 block lg:hidden"
+              class="block right-4 absolute lg:hidden"
             >
               <span
-                class="hamburger-line origin-top-left transition duration-300 ease-in-out"
+                class="origin-top-left transition duration-300 ease-in-out hamburger-line"
               ></span>
               <span
-                class="hamburger-line transition duration-300 ease-in-out"
+                class="transition duration-300 ease-in-out hamburger-line"
               ></span>
               <span
-                class="hamburger-line origin-bottom-left transition duration-300 ease-in-out"
+                class="origin-bottom-left transition duration-300 ease-in-out hamburger-line"
               ></span>
             </button>
 
             <nav
               id="nav-menu"
-              class="absolute top-full right-4 hidden w-full max-w-[250px] rounded-lg bg-slate-100 py-5 shadow-lg lg:static lg:block lg:max-w-full lg:rounded-none lg:bg-transparent lg:shadow-none dark:bg-black dark:shadow-slate-500 lg:dark:bg-transparent"
+              class="lg:block top-full right-4 lg:static absolute hidden bg-slate-100 lg:bg-transparent lg:dark:bg-transparent dark:bg-black shadow-lg lg:shadow-none dark:shadow-slate-500 py-5 rounded-lg lg:rounded-none w-full max-w-[250px] lg:max-w-full"
             >
               <ul class="block lg:flex">
                 <li class="group">
                   <a
                     href="#home"
-                    class="text-dark mx-8 flex py-2 text-base group-hover:text-sky-400 dark:text-white"
+                    class="group-hover:text-sky-400 flex mx-8 py-2 text-base text-dark dark:text-white"
                     >Beranda</a
                   >
                 </li>
                 <li class="group">
                   <a
                     href="#about"
-                    class="text-dark mx-8 flex py-2 text-base group-hover:text-sky-400 dark:text-white"
+                    class="group-hover:text-sky-400 flex mx-8 py-2 text-base text-dark dark:text-white"
                     >Tentang Saya</a
                   >
                 </li>
                 <li class="group">
                   <a
                     href="#portfolio"
-                    class="text-dark mx-8 flex py-2 text-base group-hover:text-sky-400 dark:text-white"
+                    class="group-hover:text-sky-400 flex mx-8 py-2 text-base text-dark dark:text-white"
                     >Portfolio</a
                   >
                 </li>
                 <li class="group">
                   <a
                     href="#clients"
-                    class="text-dark mx-8 flex py-2 text-base group-hover:text-sky-400 dark:text-white"
+                    class="group-hover:text-sky-400 flex mx-8 py-2 text-base text-dark dark:text-white"
                     >Clients</a
                   >
                 </li>
                 <li class="group">
                   <a
                     href="#blog"
-                    class="text-dark mx-8 flex py-2 text-base group-hover:text-sky-400 dark:text-white"
+                    class="group-hover:text-sky-400 flex mx-8 py-2 text-base text-dark dark:text-white"
                     >Blog</a
                   >
                 </li>
                 <li class="group">
                   <a
                     href="#contact"
-                    class="text-dark mx-8 flex py-2 text-base group-hover:text-sky-400 dark:text-white"
+                    class="group-hover:text-sky-400 flex mx-8 py-2 text-base text-dark dark:text-white"
                     >Contact</a
                   >
                 </li>
-                <li class="mt-3 flex items-center pl-8 lg:mt-0">
+                <li class="flex items-center mt-3 lg:mt-0 pl-8">
                   <div class="flex">
-                    <span class="mr-2 text-sm text-slate-500">light</span>
+                    <span class="mr-2 text-slate-500 text-sm">light</span>
                     <input class="hidden" type="checkbox" id="dark-toggle" />
                     <label for="dark-toggle">
                       <div
-                        class="flex h-5 w-9 cursor-pointer items-center rounded-full bg-slate-500 p-1"
+                        class="flex items-center bg-slate-500 p-1 rounded-full w-9 h-5 cursor-pointer"
                       >
                         <div
-                          class="toggle-circle h-4 w-4 rounded-full bg-white transition duration-300 ease-in-out"
+                          class="bg-white rounded-full w-4 h-4 transition duration-300 ease-in-out toggle-circle"
                         ></div>
                       </div>
                     </label>
-                    <span class="ml-2 text-sm text-slate-500">dark</span>
+                    <span class="ml-2 text-slate-500 text-sm">dark</span>
                   </div>
                 </li>
               </ul>
@@ -118,22 +118,22 @@
     <!-- Header end -->
 
     <!-- Hero Section start -->
-    <section id="home" class="pt-28 dark:bg-black">
-      <div class="container mx-auto">
+    <section id="home" class="dark:bg-black pt-28">
+      <div class="mx-auto container">
         <div class="flex flex-wrap">
-          <div class="w-full self-center px-4 lg:w-1/2">
-            <h1 class="mb-2 text-base font-semibold text-sky-400">
+          <div class="px-4 w-full lg:w-1/2 self-center">
+            <h1 class="mb-2 font-semibold text-base text-sky-400">
               Perkenalkan saya
               <span
-                class="text-dark mt-1 block text-4xl font-bold dark:text-white"
+                class="block mt-1 font-bold text-4xl text-dark dark:text-white"
                 >Wandy Azami</span
               >
             </h1>
-            <h2 class="mb-5 text-lg font-medium text-slate-500">
+            <h2 class="mb-5 font-medium text-lg text-slate-500">
               Programmer &
               <span class="text-black dark:text-white">Web Developer</span>
             </h2>
-            <p class="mb-10 leading-relaxed font-medium text-slate-400">
+            <p class="mb-10 font-medium text-slate-400 leading-relaxed">
               Apakah saat ini anda butuh sebuah website untuk memperkenalkan
               bisnis
               <span class="font-bold text-black dark:text-white">Anda?</span>
@@ -141,19 +141,19 @@
 
             <a
               href="https://wa.me/6285212107494"
-              class="rounded-full bg-sky-400 px-8 py-3 text-base font-semibold text-white transition duration-300 ease-in-out hover:opacity-80 hover:shadow-lg"
+              class="bg-sky-400 hover:opacity-80 hover:shadow-lg px-8 py-3 rounded-full font-semibold text-base text-white transition duration-300 ease-in-out"
               >Hubungi Saya</a
             >
           </div>
-          <div class="w-full self-end px-4 lg:w-1/2">
-            <div class="relative mt-10 lg:right-0 lg:mt-9">
+          <div class="px-4 w-full lg:w-1/2 self-end">
+            <div class="relative lg:right-0 mt-10 lg:mt-9">
               <img
                 src="dist/img/andy.png"
                 alt="andy"
                 class="relative z-10 mx-auto max-w-full"
               />
               <span
-                class="absolute bottom-0 left-1/2 -translate-x-1/2 md:scale-125"
+                class="bottom-0 left-1/2 absolute -translate-x-1/2 md:scale-125"
               >
                 <svg
                   width="400"
@@ -176,29 +176,29 @@
     <!-- Hero Section end -->
 
     <!-- About Section star -->
-    <section id="about" class="pt-36 pb-32 dark:bg-black">
-      <div class="container mx-auto">
+    <section id="about" class="dark:bg-black pt-36 pb-32">
+      <div class="mx-auto container">
         <div class="flex flex-wrap">
-          <div class="mb-10 w-full px-4 lg:w-1/2">
-            <h4 class="mb-3 text-lg font-bold text-sky-400 uppercase">
+          <div class="mb-10 px-4 w-full lg:w-1/2">
+            <h4 class="mb-3 font-bold text-lg text-sky-400 uppercase">
               Tentang Saya
             </h4>
             <h2
-              class="text-dark mb-5 max-w-md text-3xl font-bold dark:text-white"
+              class="mb-5 max-w-md font-bold text-3xl text-dark dark:text-white"
             >
               Yuk, bikin website untuk meningkatkan profit usaha anda!
             </h2>
-            <p class="max-w-xl text-base font-medium text-slate-500 lg:text-lg">
+            <p class="max-w-xl font-medium text-base text-slate-500 lg:text-lg">
               Saya menerima permintaan untuk pembuatan website company profile,
               e-katalog, landing page marketing, portofolio dan toko online
               untuk berbagai jenis usaha dan profesi.
             </p>
           </div>
-          <div class="w-full px-4 lg:w-1/2">
-            <h3 class="text-dark mb-4 text-2xl font-semibold dark:text-white">
+          <div class="px-4 w-full lg:w-1/2">
+            <h3 class="mb-4 font-semibold text-2xl text-dark dark:text-white">
               Mari berteman
             </h3>
-            <p class="mb-6 text-base font-medium text-slate-500">
+            <p class="mb-6 font-medium text-base text-slate-500">
               Mari ikuti kegiatan saya melalui content yang ada di sosial media
               berikut ini:
             </p>
@@ -207,11 +207,11 @@
               <a
                 href="https://www.youtube.com/@azamiwandy"
                 target="_blank"
-                class="border-secondary hover:border-primary mr-3 flex h-9 w-9 items-center justify-center rounded-full border hover:bg-sky-400 hover:text-white"
+                class="flex justify-center items-center border-secondary hover:border-primary hover:bg-sky-400 mr-3 border rounded-full w-9 h-9 hover:text-white"
               >
                 <svg
                   width="20"
-                  class="fill-current text-slate-500"
+                  class="text-slate-500 fill-current"
                   role="img"
                   viewBox="0 0 24 24"
                   xmlns="http://www.w3.org/2000/svg"
@@ -226,11 +226,11 @@
               <a
                 href="https://instagram.com/azamilink"
                 target="_blank"
-                class="border-secondary hover:border-primary mr-3 flex h-9 w-9 items-center justify-center rounded-full border hover:bg-sky-400 hover:text-white"
+                class="flex justify-center items-center border-secondary hover:border-primary hover:bg-sky-400 mr-3 border rounded-full w-9 h-9 hover:text-white"
               >
                 <svg
                   width="20"
-                  class="fill-current text-slate-500"
+                  class="text-slate-500 fill-current"
                   role="img"
                   viewBox="0 0 24 24"
                   xmlns="http://www.w3.org/2000/svg"
@@ -245,11 +245,11 @@
               <a
                 href="https://www.tiktok.com/@azamilink"
                 target="_blank"
-                class="border-secondary hover:border-primary mr-3 flex h-9 w-9 items-center justify-center rounded-full border hover:bg-sky-400 hover:text-white"
+                class="flex justify-center items-center border-secondary hover:border-primary hover:bg-sky-400 mr-3 border rounded-full w-9 h-9 hover:text-white"
               >
                 <svg
                   width="20"
-                  class="fill-current text-slate-500"
+                  class="text-slate-500 fill-current"
                   role="img"
                   viewBox="0 0 24 24"
                   xmlns="http://www.w3.org/2000/svg"
@@ -264,11 +264,11 @@
               <a
                 href="https://x.com/azamilink"
                 target="_blank"
-                class="border-secondary hover:border-primary mr-3 flex h-9 w-9 items-center justify-center rounded-full border hover:bg-sky-400 hover:text-white"
+                class="flex justify-center items-center border-secondary hover:border-primary hover:bg-sky-400 mr-3 border rounded-full w-9 h-9 hover:text-white"
               >
                 <svg
                   width="20"
-                  class="fill-current text-slate-500"
+                  class="text-slate-500 fill-current"
                   role="img"
                   viewBox="0 0 24 24"
                   xmlns="http://www.w3.org/2000/svg"
@@ -289,24 +289,24 @@
     <!-- Portfolio Section start -->
     <section
       id="portfolio"
-      class="w-full bg-slate-100 pt-36 pb-16 dark:bg-slate-800"
+      class="bg-slate-100 dark:bg-slate-800 pt-36 pb-16 w-full"
     >
-      <div class="container mx-auto max-w-6xl">
-        <div class="w-full px-4">
-          <div class="container mx-auto mb-16 max-w-6xl text-center">
-            <h4 class="mb-2 text-lg font-semibold text-sky-400">Portfolio</h4>
-            <h2 class="text-dark mb-4 text-3xl font-bold dark:text-white">
+      <div class="mx-auto max-w-6xl container">
+        <div class="px-4 w-full">
+          <div class="mx-auto mb-16 max-w-6xl text-center container">
+            <h4 class="mb-2 font-semibold text-lg text-sky-400">Portfolio</h4>
+            <h2 class="mb-4 font-bold text-3xl text-dark dark:text-white">
               Project Terbaru
             </h2>
-            <p class="text-md font-medium text-slate-500 md:text-lg">
+            <p class="font-medium text-md text-slate-500 md:text-lg">
               Dibawah ini adalah beberapa website yang pernah saya kembangkan
               dan telah dideploy ke web Hosting.
             </p>
           </div>
         </div>
-        <div class="flex w-full flex-wrap justify-center">
+        <div class="flex flex-wrap justify-center w-full">
           <div class="mb-12 p-4 md:w-1/2">
-            <div class="rounded-ms overflow-hidden shadow-md">
+            <div class="shadow-md rounded-ms overflow-hidden">
               <a target="_blank" href="https://klinikpalapa.vercel.app">
                 <img
                   src="dist/img/klinikpalapa.png"
@@ -316,7 +316,7 @@
               </a>
             </div>
             <h3
-              class="mt-5 mb-5 text-xl font-semibold text-black dark:text-white"
+              class="mt-5 mb-5 font-semibold text-black text-xl dark:text-white"
             >
               <a target="_blank" href="https://azamilink.github.io/shoping/"
                 >Website Klinik Palapa
@@ -324,7 +324,7 @@
             </h3>
           </div>
           <div class="mb-12 p-4 md:w-1/2">
-            <div class="rounded-ms overflow-hidden shadow-md">
+            <div class="shadow-md rounded-ms overflow-hidden">
               <a
                 target="_blank"
                 href="https://azamito.github.io/companyprofile/"
@@ -333,7 +333,7 @@
               </a>
             </div>
             <h3
-              class="mt-5 mb-5 text-xl font-semibold text-black dark:text-white"
+              class="mt-5 mb-5 font-semibold text-black text-xl dark:text-white"
             >
               <a
                 target="_blank"
@@ -343,13 +343,13 @@
             </h3>
           </div>
           <div class="mb-12 p-4 md:w-1/2">
-            <div class="rounded-ms overflow-hidden shadow-md">
+            <div class="shadow-md rounded-ms overflow-hidden">
               <a target="_blank" href="https://azamito.github.io/landingpage/">
                 <img src="dist/img/02.png" alt="landing-page" class="w-full" />
               </a>
             </div>
             <h3
-              class="mt-5 mb-5 text-xl font-semibold text-black dark:text-white"
+              class="mt-5 mb-5 font-semibold text-black text-xl dark:text-white"
             >
               <a target="_blank" href="https://azamito.github.io/landingpage/"
                 >Landing Page</a
@@ -357,13 +357,13 @@
             </h3>
           </div>
           <div class="mb-12 p-4 md:w-1/2">
-            <div class="rounded-ms overflow-hidden shadow-md">
+            <div class="shadow-md rounded-ms overflow-hidden">
               <a target="_blank" href="https://superchater.netlify.app">
                 <img src="dist/img/03.png" alt="chat-app" class="w-full" />
               </a>
             </div>
             <h3
-              class="mt-5 mb-5 text-xl font-semibold text-black dark:text-white"
+              class="mt-5 mb-5 font-semibold text-black text-xl dark:text-white"
             >
               <a target="_blank" href="https://superchater.netlify.app"
                 >Super Chater</a
@@ -371,19 +371,19 @@
             </h3>
           </div>
           <div class="mb-12 p-4 md:w-1/2">
-            <div class="rounded-ms overflow-hidden shadow-md">
+            <div class="shadow-md rounded-ms overflow-hidden">
               <a target="_blank" href="https://azmblog.vercel.app">
                 <img src="dist/img/04.png" alt="blog-post" class="w-full" />
               </a>
             </div>
             <h3
-              class="mt-5 mb-5 text-xl font-semibold text-black dark:text-white"
+              class="mt-5 mb-5 font-semibold text-black text-xl dark:text-white"
             >
               <a target="_blank" href="https://azmblog.vercel.app">Azm Blog</a>
             </h3>
           </div>
           <div class="mb-12 p-4 md:w-1/2">
-            <div class="rounded-ms overflow-hidden shadow-md">
+            <div class="shadow-md rounded-ms overflow-hidden">
               <a target="_blank" href="https://azamilink.github.io/shoping/">
                 <img
                   src="dist/img/shoping.png"
@@ -393,7 +393,7 @@
               </a>
             </div>
             <h3
-              class="mt-5 mb-5 text-xl font-semibold text-black dark:text-white"
+              class="mt-5 mb-5 font-semibold text-black text-xl dark:text-white"
             >
               <a target="_blank" href="https://azamilink.github.io/shoping/"
                 >Toko Online</a
@@ -406,45 +406,45 @@
     <!-- Portfolio Section end -->
 
     <!-- Client Section start -->
-    <section id="clients" class="bg-slate-800 pt-36 pb-32 dark:bg-slate-300">
+    <section id="clients" class="bg-slate-800 dark:bg-slate-300 pt-36 pb-32">
       <div class="container">
-        <div class="w-full px-4">
+        <div class="px-4 w-full">
           <div class="mx-auto mb-16 text-center">
-            <h4 class="mb-2 text-lg font-semibold text-sky-400">Clients</h4>
+            <h4 class="mb-2 font-semibold text-lg text-sky-400">Clients</h4>
             <h2
-              class="mb-4 text-3xl font-bold text-white md:text-4xl lg:text-5xl dark:text-black"
+              class="mb-4 font-bold text-3xl text-white md:text-4xl lg:text-5xl dark:text-black"
             >
               Mari Bekerjasama
             </h2>
-            <p class="text-md font-medium text-slate-500 md:text-lg">
+            <p class="font-medium text-md text-slate-500 md:text-lg">
               Saya menerima kerjasama pembuatan website untuk semua jenis usaha
               dan profesi.
             </p>
           </div>
         </div>
-        <div class="w-full px-4">
-          <div class="flex flex-wrap items-center justify-center">
+        <div class="px-4 w-full">
+          <div class="flex flex-wrap justify-center items-center">
             <a
               href="#"
-              class="mx-4 max-w-[120px] py-4 opacity-60 grayscale transition duration-500 hover:opacity-100 hover:grayscale-0 lg:mx-6 xl:mx-8"
+              class="opacity-60 hover:opacity-100 mx-4 lg:mx-6 xl:mx-8 py-4 max-w-[120px] transition duration-500 grayscale hover:grayscale-0"
             >
               <img src="dist/img/clients/google.png" alt="google" />
             </a>
             <a
               href="#"
-              class="mx-4 max-w-[120px] py-4 opacity-60 grayscale transition duration-500 hover:opacity-100 hover:grayscale-0 lg:mx-6 xl:mx-8"
+              class="opacity-60 hover:opacity-100 mx-4 lg:mx-6 xl:mx-8 py-4 max-w-[120px] transition duration-500 grayscale hover:grayscale-0"
             >
               <img src="dist/img/clients/gojek.png" alt="gojek" />
             </a>
             <a
               href="#"
-              class="mx-4 max-w-[120px] py-4 opacity-60 grayscale transition duration-500 hover:opacity-100 hover:grayscale-0 lg:mx-6 xl:mx-8"
+              class="opacity-60 hover:opacity-100 mx-4 lg:mx-6 xl:mx-8 py-4 max-w-[120px] transition duration-500 grayscale hover:grayscale-0"
             >
               <img src="dist/img/clients/traveloka.png" alt="traveloka" />
             </a>
             <a
               href="#"
-              class="mx-4 max-w-[120px] py-4 opacity-60 grayscale transition duration-500 hover:opacity-100 hover:grayscale-0 lg:mx-6 xl:mx-8"
+              class="opacity-60 hover:opacity-100 mx-4 lg:mx-6 xl:mx-8 py-4 max-w-[120px] transition duration-500 grayscale hover:grayscale-0"
             >
               <img src="dist/img/clients/tokopedia.png" alt="tokopedia" />
             </a>
@@ -455,24 +455,24 @@
     <!-- Client Section end -->
 
     <!-- Blog Section start -->
-    <section id="blog" class="w-full bg-slate-100 pt-36 pb-32 dark:bg-black">
-      <div class="container mx-auto max-w-6xl">
-        <div class="w-full px-4">
+    <section id="blog" class="bg-slate-100 dark:bg-black pt-36 pb-32 w-full">
+      <div class="mx-auto max-w-6xl container">
+        <div class="px-4 w-full">
           <div class="mx-auto mb-16 max-w-full text-center">
-            <h4 class="mb-2 text-lg font-semibold text-sky-400">Blog</h4>
-            <h2 class="mb-4 text-3xl font-bold text-black dark:text-white">
+            <h4 class="mb-2 font-semibold text-lg text-sky-400">Blog</h4>
+            <h2 class="mb-4 font-bold text-3xl text-black dark:text-white">
               Tulisan Terkini
             </h2>
-            <p class="text-md font-medium text-slate-500 md:text-lg">
+            <p class="font-medium text-md text-slate-500 md:text-lg">
               Membaca memberi kita kekuatan untuk mengubah dunia. Bacalah dengan
               hati yang terbuka untuk melihat keindahan dunia.
             </p>
           </div>
 
           <div class="flex flex-wrap">
-            <div class="w-full px-4 lg:w-1/2 xl:w-1/3">
+            <div class="px-4 w-full lg:w-1/2 xl:w-1/3">
               <div
-                class="dark:bg-dark mb-10 overflow-hidden rounded-xl bg-slate-100 shadow-lg dark:bg-slate-800 dark:shadow-slate-500"
+                class="bg-slate-100 dark:bg-dark dark:bg-slate-800 shadow-lg dark:shadow-slate-500 mb-10 rounded-xl overflow-hidden"
               >
                 <img
                   src="dist/img/blog/web.jpg"
@@ -483,25 +483,25 @@
                   <h3>
                     <a
                       href="#"
-                      class="mb-3 block truncate text-xl font-semibold text-black hover:text-sky-400 dark:text-white"
+                      class="block mb-3 font-semibold text-black text-xl hover:text-sky-400 dark:text-white truncate"
                       >Tips Belajar Programming</a
                     >
                   </h3>
-                  <p class="mb-4 text-base font-medium text-slate-500">
+                  <p class="mb-4 font-medium text-base text-slate-500">
                     Buat situs web pribadi atau gunakan platform seperti GitHub
-                    untuk memamerkan proyek-proyek yang telah Anda buat
+                    untuk memamerkan proyek yang telah dibuat.
                   </p>
                   <a
                     href="#"
-                    class="rounded-lg bg-sky-400 px-4 py-2 text-sm font-medium text-white hover:opacity-80"
+                    class="bg-sky-400 hover:opacity-80 px-4 py-2 rounded-lg font-medium text-sm text-white"
                     >Baca Selengkapnya</a
                   >
                 </div>
               </div>
             </div>
-            <div class="w-full px-4 lg:w-1/2 xl:w-1/3">
+            <div class="px-4 w-full lg:w-1/2 xl:w-1/3">
               <div
-                class="mb-10 overflow-hidden rounded-xl bg-slate-100 shadow-lg dark:bg-slate-800 dark:shadow-slate-500"
+                class="bg-slate-100 dark:bg-slate-800 shadow-lg dark:shadow-slate-500 mb-10 rounded-xl overflow-hidden"
               >
                 <img
                   src="dist/img/blog/keyboard.jpg"
@@ -512,43 +512,42 @@
                   <h3>
                     <a
                       href="#"
-                      class="mb-3 block truncate text-xl font-semibold text-black hover:text-sky-400 dark:text-white"
+                      class="block mb-3 font-semibold text-black text-xl hover:text-sky-400 dark:text-white truncate"
                       >Review Keyboard GMMK Pro</a
                     >
                   </h3>
-                  <p class="mb-4 text-base font-medium text-slate-500">
+                  <p class="mb-4 font-medium text-base text-slate-500">
                     GMMK adalah keyboard mekanis pertama di dunia yang
-                    dilengkapi sakelar yang dapat ditukar saat panas untuk
-                    sakelar
+                    dilengkapi sakelar yang dapat ditukar saat panas
                   </p>
                   <a
                     href="#"
-                    class="rounded-lg bg-sky-400 px-4 py-2 text-sm font-medium text-white hover:opacity-80"
+                    class="bg-sky-400 hover:opacity-80 px-4 py-2 rounded-lg font-medium text-sm text-white"
                     >Baca Selengkapnya</a
                   >
                 </div>
               </div>
             </div>
-            <div class="w-full px-4 lg:w-1/2 xl:w-1/3">
+            <div class="px-4 w-full lg:w-1/2 xl:w-1/3">
               <div
-                class="mb-10 overflow-hidden rounded-xl bg-slate-100 shadow-lg dark:bg-slate-800 dark:shadow-slate-500"
+                class="bg-slate-100 dark:bg-slate-800 shadow-lg dark:shadow-slate-500 mb-10 rounded-xl overflow-hidden"
               >
                 <img src="dist/img/blog/kopi.jpg" alt="coffe" class="w-full" />
                 <div class="px-6 py-8">
                   <h3>
                     <a
                       href="#"
-                      class="mb-3 block truncate text-xl font-semibold text-black hover:text-sky-400 dark:text-white"
+                      class="block mb-3 font-semibold text-black text-xl hover:text-sky-400 dark:text-white truncate"
                       >Menikmati Secangkir Kopi</a
                     >
                   </h3>
-                  <p class="mb-4 text-base font-medium text-slate-500">
+                  <p class="mb-4 font-medium text-base text-slate-500">
                     perjalanan dalam cangkir, di mana setiap tetesnya mengandung
                     cerita, cita rasa, dan makna yang lebih dalam.
                   </p>
                   <a
                     href="#"
-                    class="rounded-lg bg-sky-400 px-4 py-2 text-sm font-medium text-white hover:opacity-80"
+                    class="bg-sky-400 hover:opacity-80 px-4 py-2 rounded-lg font-medium text-sm text-white"
                     >Baca Selengkapnya</a
                   >
                 </div>
@@ -561,15 +560,15 @@
     <!-- Blog Section end -->
 
     <!-- Contact Section start -->
-    <section id="contact" class="w-full pt-36 pb-32 dark:bg-slate-800">
-      <div class="container mx-auto max-w-6xl">
-        <div class="w-full px-4">
+    <section id="contact" class="dark:bg-slate-800 py-10 w-full">
+      <div class="mx-auto max-w-6xl container">
+        <div class="px-4 w-full">
           <div class="mx-auto mb-16 max-w-full text-center">
-            <h4 class="mb-2 text-lg font-semibold text-sky-400">Contact</h4>
-            <h2 class="mb-4 text-3xl font-bold text-black dark:text-white">
+            <h4 class="mb-2 font-semibold text-lg text-sky-400">Contact</h4>
+            <h2 class="mb-4 font-bold text-3xl text-black dark:text-white">
               Hubungi Saya
             </h2>
-            <p class="text-md font-medium text-slate-500 md:text-lg">
+            <p class="font-medium text-md text-slate-500 md:text-lg">
               Silahkan kirimkan pesan melalui form dibawah ini untuk pembuatan
               website yang anda butuhkan.
             </p>
@@ -578,45 +577,45 @@
 
         <form action="#" class="py-8">
           <div
-            class="mx-auto w-full p-4 shadow-lg lg:w-2/3 dark:shadow-slate-500"
+            class="shadow-lg dark:shadow-slate-500 mx-auto p-4 w-full lg:w-2/3"
           >
-            <div class="mb-8 w-full px-4">
-              <label for="name" class="text-base font-bold text-sky-400"
+            <div class="mb-8 px-4 w-full">
+              <label for="name" class="font-bold text-base text-sky-400"
                 >Nama</label
               >
               <input
                 type="text"
                 name="name"
                 id="name"
-                class="focus:border-primary text-dark w-full rounded-md bg-slate-200 p-3 focus:ring-1 focus:outline-none"
+                class="focus:border-primary bg-slate-200 p-3 rounded-md focus:ring-1 w-full text-dark focus:outline-none"
               />
             </div>
-            <div class="mb-8 w-full px-4">
-              <label for="email" class="text-base font-bold text-sky-400"
+            <div class="mb-8 px-4 w-full">
+              <label for="email" class="font-bold text-base text-sky-400"
                 >Email</label
               >
               <input
                 type="email"
                 name="email"
                 id="email"
-                class="focus:border-primary text-dark w-full rounded-md bg-slate-200 p-3 focus:ring-1 focus:outline-none"
+                class="focus:border-primary bg-slate-200 p-3 rounded-md focus:ring-1 w-full text-dark focus:outline-none"
               />
             </div>
-            <div class="mb-8 w-full px-4">
-              <label for="pesan" class="text-base font-bold text-sky-400"
+            <div class="mb-8 px-4 w-full">
+              <label for="pesan" class="font-bold text-base text-sky-400"
                 >Pesan</label
               >
               <textarea
                 type="text"
                 name="pesan"
                 id="pesan"
-                class="focus:border-primary text-dark h-32 w-full rounded-md bg-slate-200 p-3 focus:ring-1 focus:outline-none"
+                class="focus:border-primary bg-slate-200 p-3 rounded-md focus:ring-1 w-full h-32 text-dark focus:outline-none"
               >
               </textarea>
             </div>
             <div class="w-full">
               <button
-                class="w-full rounded-full bg-sky-400 px-8 py-3 text-base font-semibold text-white transition duration-500 hover:opacity-80 hover:shadow-lg"
+                class="bg-sky-400 hover:opacity-80 hover:shadow-lg px-8 py-3 rounded-full w-full font-semibold text-base text-white transition duration-500"
               >
                 Kirim
               </button>
@@ -631,83 +630,89 @@
     <footer class="bg-black pt-24 pb-12">
       <div class="container">
         <div class="flex flex-wrap">
-          <div class="mb-12 w-full px-4 font-medium text-slate-300 md:w-1/3">
-            <h2 class="mb-5 text-4xl font-bold text-white">WAZMI</h2>
-            <h3 class="mb-2 text-2xl font-bold">Hubungi Kami</h3>
+          <div class="mb-12 px-4 w-full md:w-1/3 font-medium text-slate-300">
+            <h2 class="mb-5 font-bold text-4xl text-white">AZAMILINK</h2>
+            <h5 class="mb-6">
+              <a
+                href="https://wa.me/6285212107494"
+                class="bg-sky-400 hover:opacity-80 hover:shadow-lg px-8 py-3 rounded-full font-semibold text-base text-white transition duration-300 ease-in-out"
+                >Hubungi Saya</a
+              >
+            </h5>
             <p>azamiwandi@gmail.com</p>
             <p>Jl Damai Raya No. 5 Pesanggrahan</p>
             <p>Jakarta Selatan</p>
           </div>
-          <div class="mb-12 w-full px-4 md:w-1/3">
-            <h3 class="mb-5 text-xl font-semibold text-white">
+          <div class="mb-12 px-4 w-full md:w-1/3">
+            <h3 class="mb-5 font-semibold text-white text-xl">
               Kategori Tulisan
             </h3>
             <ul>
               <li class="text-slate-300">
                 <a
                   href="#"
-                  class="mb-3 inline-block text-base hover:text-sky-400"
+                  class="inline-block mb-3 text-base hover:text-sky-400"
                   >Programming</a
                 >
               </li>
               <li class="text-slate-300">
                 <a
                   href="#"
-                  class="mb-3 inline-block text-base hover:text-sky-400"
+                  class="inline-block mb-3 text-base hover:text-sky-400"
                   >Teknologi</a
                 >
               </li>
               <li class="text-slate-300">
                 <a
                   href="#"
-                  class="mb-3 inline-block text-base hover:text-sky-400"
+                  class="inline-block mb-3 text-base hover:text-sky-400"
                   >Gaya Hidup</a
                 >
               </li>
             </ul>
           </div>
-          <div class="mb-12 w-full px-4 md:w-1/3">
-            <h3 class="mb-5 text-xl font-semibold text-white">Tautan</h3>
+          <div class="mb-12 px-4 w-full md:w-1/3">
+            <h3 class="mb-5 font-semibold text-white text-xl">Tautan</h3>
             <ul>
               <li class="text-slate-300">
                 <a
                   href="#home"
-                  class="mb-3 inline-block text-base hover:text-sky-400"
+                  class="inline-block mb-3 text-base hover:text-sky-400"
                   >Beranda</a
                 >
               </li>
               <li class="text-slate-300">
                 <a
                   href="#about"
-                  class="mb-3 inline-block text-base hover:text-sky-400"
+                  class="inline-block mb-3 text-base hover:text-sky-400"
                   >Tentang Saya</a
                 >
               </li>
               <li class="text-slate-300">
                 <a
                   href="#portfolio"
-                  class="mb-3 inline-block text-base hover:text-sky-400"
+                  class="inline-block mb-3 text-base hover:text-sky-400"
                   >Portfolio</a
                 >
               </li>
               <li class="text-slate-300">
                 <a
                   href="#clients"
-                  class="mb-3 inline-block text-base hover:text-sky-400"
+                  class="inline-block mb-3 text-base hover:text-sky-400"
                   >Clients</a
                 >
               </li>
               <li class="text-slate-300">
                 <a
                   href="#blog"
-                  class="mb-3 inline-block text-base hover:text-sky-400"
+                  class="inline-block mb-3 text-base hover:text-sky-400"
                   >Blog</a
                 >
               </li>
               <li class="text-slate-300">
                 <a
                   href="#contact"
-                  class="mb-3 inline-block text-base hover:text-sky-400"
+                  class="inline-block mb-3 text-base hover:text-sky-400"
                   >Contact</a
                 >
               </li>
@@ -715,17 +720,17 @@
           </div>
         </div>
 
-        <div class="w-full border-t border-slate-700 pt-10">
-          <div class="mb-5 flex items-center justify-center">
+        <div class="border-slate-700 pt-10 border-t w-full">
+          <div class="flex justify-center items-center mb-5">
             <!-- Youtube -->
             <a
               href="https://youtube.com/@azamiwandy"
               target="_blank"
-              class="border-secondary hover:border-primary mr-3 flex h-9 w-9 items-center justify-center rounded-full border text-slate-300 hover:bg-sky-400 hover:text-white"
+              class="flex justify-center items-center border-secondary hover:border-primary hover:bg-sky-400 mr-3 border rounded-full w-9 h-9 text-slate-300 hover:text-white"
             >
               <svg
                 width="20"
-                class="fill-current text-slate-500"
+                class="text-slate-500 fill-current"
                 role="img"
                 viewBox="0 0 24 24"
                 xmlns="http://www.w3.org/2000/svg"
@@ -740,11 +745,11 @@
             <a
               href="https://instagram.com/azamilink"
               target="_blank"
-              class="border-secondary hover:border-primary mr-3 flex h-9 w-9 items-center justify-center rounded-full border text-slate-300 hover:bg-sky-400 hover:text-white"
+              class="flex justify-center items-center border-secondary hover:border-primary hover:bg-sky-400 mr-3 border rounded-full w-9 h-9 text-slate-300 hover:text-white"
             >
               <svg
                 width="20"
-                class="fill-current text-slate-500"
+                class="text-slate-500 fill-current"
                 role="img"
                 viewBox="0 0 24 24"
                 xmlns="http://www.w3.org/2000/svg"
@@ -759,11 +764,11 @@
             <a
               href="https://www.tiktok.com/@azamilink"
               target="_blank"
-              class="border-secondary hover:border-primary mr-3 flex h-9 w-9 items-center justify-center rounded-full border text-slate-300 hover:bg-sky-400 hover:text-white"
+              class="flex justify-center items-center border-secondary hover:border-primary hover:bg-sky-400 mr-3 border rounded-full w-9 h-9 text-slate-300 hover:text-white"
             >
               <svg
                 width="20"
-                class="fill-current text-slate-500"
+                class="text-slate-500 fill-current"
                 role="img"
                 viewBox="0 0 24 24"
                 xmlns="http://www.w3.org/2000/svg"
@@ -778,11 +783,11 @@
             <a
               href="https://x.com/azamilink"
               target="_blank"
-              class="border-secondary hover:border-primary mr-3 flex h-9 w-9 items-center justify-center rounded-full border text-slate-300 hover:bg-sky-400 hover:text-white"
+              class="flex justify-center items-center border-secondary hover:border-primary hover:bg-sky-400 mr-3 border rounded-full w-9 h-9 text-slate-300 hover:text-white"
             >
               <svg
                 width="20"
-                class="fill-current text-slate-500"
+                class="text-slate-500 fill-current"
                 role="img"
                 viewBox="0 0 24 24"
                 xmlns="http://www.w3.org/2000/svg"
@@ -795,7 +800,7 @@
             </a>
           </div>
 
-          <p class="text-center text-sm font-medium text-slate-500">
+          <p class="font-medium text-center text-slate-500 text-sm">
             Dibuat oleh
             <a
               href="https://instagram.com/azamiwandy"
@@ -813,10 +818,10 @@
     <!-- Back to start -->
     <a
       href="#home"
-      class="fixed right-4 bottom-4 z-[9999] flex h-14 w-14 items-center justify-center rounded-full bg-sky-400 p-4 hover:animate-pulse"
+      class="right-4 bottom-4 z-[9999] fixed flex justify-center items-center bg-sky-400 p-4 rounded-full w-14 h-14 hover:animate-pulse"
       id="to-top"
     >
-      <span class="mt-2 block h-5 w-5 rotate-45 border-t-2 border-l-2"></span>
+      <span class="block mt-2 border-t-2 border-l-2 w-5 h-5 rotate-45"></span>
     </a>
     <!-- Back to end -->
 
