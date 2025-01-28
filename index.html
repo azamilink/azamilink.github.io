@@ -574,8 +574,32 @@
             </p>
           </div>
         </div>
-
-        <form action="#" class="py-4">
+        <div
+          role="alert"
+          class="relative hidden bg-blue-600 mx-auto my-alert mb-8 p-3 rounded-md w-full max-w-2xl text-sm text-white container"
+        >
+          Selamat...! Pesan Anda Telah Terkirim.
+          <button
+            class="top-1.5 right-1.5 absolute flex justify-center items-center hover:bg-white/10 active:bg-white/10 rounded-md w-8 h-8 text-white transition-all btn-close"
+            type="button"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              class="w-5 h-5"
+              stroke-width="2"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M6 18L18 6M6 6l12 12"
+              ></path>
+            </svg>
+          </button>
+        </div>
+        <form class="py-4" name="submit-to-google-sheet">
           <div
             class="shadow-lg dark:shadow-slate-500 mx-auto p-4 w-full lg:w-2/3"
           >
@@ -585,7 +609,7 @@
               >
               <input
                 type="text"
-                name="name"
+                name="nama"
                 id="name"
                 class="focus:border-primary bg-slate-200 p-3 rounded-md focus:ring-1 w-full text-dark focus:outline-none"
               />
@@ -615,9 +639,16 @@
             </div>
             <div class="w-full">
               <button
-                class="bg-sky-400 hover:opacity-80 hover:shadow-lg px-8 py-3 rounded-full w-full font-semibold text-base text-white transition duration-500"
+                type="submit"
+                class="bg-sky-400 hover:opacity-80 hover:shadow-lg px-8 py-3 rounded-full w-full font-semibold text-base text-white transition duration-500 btn-kirim"
               >
                 Kirim
+              </button>
+              <button
+                class="hidden bg-pink-400 hover:opacity-80 hover:shadow-lg px-8 py-3 rounded-full w-full font-semibold text-base text-black transition duration-500 btn-loading"
+              >
+                <span></span>
+                loading
               </button>
             </div>
           </div>
