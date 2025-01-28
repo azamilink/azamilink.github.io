@@ -45,11 +45,3 @@ darkToggle.addEventListener("click", function () {
     localStorage.theme = "light";
   }
 });
-
-// pindahkan posisi toggle sesuai mode
-document.documentElement.classList.toggle(
-  "dark",
-  localStorage.currentTheme === "dark" ||
-    (!("theme" in localStorage) &&
-      window.matchMedia("(prefers-color-scheme: dark)").matches),
-);
