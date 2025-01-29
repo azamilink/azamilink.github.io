@@ -1161,11 +1161,6 @@
       max-width: 100%;
     }
   }
-  .lg\:max-w-sm {
-    @media (width >= 64rem) {
-      max-width: var(--container-sm);
-    }
-  }
   .lg\:rounded-none {
     @media (width >= 64rem) {
       border-radius: 0;
