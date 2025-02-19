@@ -46,6 +46,16 @@ darkToggle.addEventListener("click", function () {
   }
 });
 
+if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+  darkToggle.checked = true;
+  html.classList.add("dark");
+  localStorage.theme = "dark";
+} else {
+  darkToggle.checked = false;
+  html.classList.remove("dark");
+  localStorage.theme = "light";
+}
+
 // Google contact form
 const scriptURL =
   "https://script.google.com/macros/s/AKfycbyFDbuPa-rXPcppmgrUBEFYpoFYG9dBWTyUNbaRhvOIfzhOz1665fBRPmYdNXwZKzPH/exec";
