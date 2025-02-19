@@ -6,6 +6,9 @@
     <title>Portfolio</title>
     <link href="src/output.css" rel="stylesheet" />
 
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
     <script>
       document.documentElement.classList.toggle(
         "dark",
@@ -176,8 +179,8 @@
     <!-- Hero Section end -->
 
     <!-- About Section star -->
-    <section id="about" class="pt-36 pb-32 dark:bg-black">
-      <div class="container mx-auto">
+    <section id="about" class="w-full pt-36 pb-28 dark:bg-black">
+      <div class="container mx-auto max-w-7xl">
         <div class="flex flex-wrap">
           <div class="mb-10 w-full px-4 lg:w-1/2">
             <h4 class="mb-3 text-lg font-bold text-sky-400 uppercase">
@@ -186,7 +189,7 @@
             <h2
               class="text-dark mb-5 max-w-md text-3xl font-bold dark:text-white"
             >
-              Yuk, bikin website untuk meningkatkan profit usaha anda!
+              Ayo tingkat profit bisnis anda dengan membangun sebuah website!
             </h2>
             <p class="max-w-xl text-base font-medium text-slate-500 lg:text-lg">
               Saya menerima permintaan untuk pembuatan website company profile,
@@ -202,7 +205,7 @@
               Ikuti kegiatan saya melalui content yang ada di
               <strong>sosial media</strong> berikut ini:
             </p>
-            <div>
+            <div class="dark:text-white">
               <!-- Youtube -->
               <div class="mb-2 flex w-full">
                 <a
@@ -290,6 +293,137 @@
                   </svg>
                 </a>
                 <span>TWITTER</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container mx-auto max-w-7xl">
+        <div class="flex flex-wrap">
+          <div class="mb-10 w-full px-4 lg:w-1/2">
+            <div class="w-full py-20">
+              <h3 class="text-lg font-bold text-zinc-700 dark:text-white">
+                Keahlian Saya
+              </h3>
+              <p class="text-base font-medium text-slate-500">
+                Saya menguasai basic pemograman web dan bahasa pendukung lainnya
+                untuk pengembangan aplikasi berbasis web, diantaranya:
+              </p>
+            </div>
+            <div class="flex flex-wrap dark:text-white">
+              <div class="mb-10 w-full lg:w-1/5" data-aos="flip-right">
+                <div class="text-center">
+                  <img src="dist/skill/01.png" class="w-full" alt="skill 1" />
+                  <div>
+                    <p class="text-base">HTML 5</p>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="mb-10 w-full lg:w-1/5"
+                data-aos="flip-right"
+                data-aos-delay="500"
+              >
+                <div class="text-center">
+                  <img src="dist/skill/02.png" class="w-full" alt="skill 2" />
+                  <div>
+                    <p class="text-base">CSS 3</p>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="mb-10 w-full lg:w-1/5"
+                data-aos="flip-right"
+                data-aos-delay="1000"
+              >
+                <div class="text-center">
+                  <img src="dist/skill/03.png" class="w-full" alt="skill 3" />
+                  <div>
+                    <p class="text-base">JavaScript</p>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="mb-10 w-full lg:w-1/5"
+                data-aos="flip-right"
+                data-aos-delay="1000"
+              >
+                <div class="text-center">
+                  <img src="dist/skill/04.png" class="w-full" alt="skill 4" />
+                  <div>
+                    <p class="text-base">PHP</p>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="mb-10 w-full lg:w-1/5"
+                data-aos="flip-right"
+                data-aos-delay="1000"
+              >
+                <div class="text-center">
+                  <img src="dist/skill/05.png" class="w-full" alt="skill 5" />
+                  <div>
+                    <p class="text-base">My SQL</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="mb-10 w-full px-4 lg:w-1/2">
+            <div class="w-full py-20">
+              <h3 class="text-lg font-bold text-zinc-700 dark:text-white">
+                Favorite Stack
+              </h3>
+              <p class="text-base font-medium text-slate-500">
+                Saya sering menggunakan beberapa framework untuk memudahkan
+                pengembang aplikasi web, yaitu:
+              </p>
+            </div>
+            <div class="flex flex-wrap gap-10 dark:text-white">
+              <div class="mb-10 w-full lg:w-1/5" data-aos="flip-right">
+                <div class="text-center">
+                  <img src="dist/frame/01.png" class="w-full" alt="frame 1" />
+                  <div>
+                    <p class="text-base">Tailwind</p>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="mb-10 w-full lg:w-1/5"
+                data-aos="flip-right"
+                data-aos-delay="500"
+              >
+                <div class="text-center">
+                  <img src="dist/frame/02.png" class="w-full" alt="frame 2" />
+                  <div>
+                    <p class="text-base">Alpine Js</p>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="mb-10 w-full lg:w-1/5"
+                data-aos="flip-right"
+                data-aos-delay="1000"
+              >
+                <div class="text-center">
+                  <img src="dist/frame/03.png" class="w-full" alt="frame 3" />
+                  <div>
+                    <p class="text-base">Laravel</p>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="mb-10 w-full lg:w-1/5"
+                data-aos="flip-right"
+                data-aos-delay="1000"
+              >
+                <div class="text-center">
+                  <img src="dist/frame/04.png" class="w-full" alt="frame 4" />
+                  <div>
+                    <p class="text-base">Livewire</p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -750,13 +884,13 @@
             <h2 class="mb-5 text-4xl font-bold text-white">AZAMILINK</h2>
             <h5 class="mb-6">
               <a
-                href="https://wa.me/6285212107494"
-                class="rounded-full px-8 py-3 text-base font-semibold text-sky-400 transition duration-300 ease-in-out hover:opacity-80 hover:shadow-lg"
-                >Mulai Obrolan</a
+                href="https://chat.whatsapp.com/DOWRpxiit9oBChqumSXGz9"
+                class="rounded-full py-3 text-base font-semibold text-sky-400 transition duration-300 ease-in-out hover:opacity-80 hover:shadow-lg"
+                >Gabung Komunitas</a
               >
             </h5>
             <p>azamiwandi@gmail.com</p>
-            <p>Jl Damai Raya</p>
+            <p>Jl Damai Raya rt 1 rw 2</p>
             <p>Pertukangan Selatan</p>
             <p>Kecamatan Pesanggarhan</p>
             <p>Kota Jakarta Selatan</p>
@@ -921,7 +1055,7 @@
           <p class="text-center text-sm font-medium text-slate-500">
             Dibuat oleh
             <a
-              href="https://wa.me/6285212107494"
+              href="mailto:azamiwandi@gmail.com"
               class="font-bold text-sky-400"
               target="_blank"
               >Wandy Azami</a
@@ -942,6 +1076,15 @@
       <span class="mt-2 block h-5 w-5 rotate-45 border-t-2 border-l-2"></span>
     </a>
     <!-- Back to end -->
+
+    <!-- Aos -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        once: true,
+        duration: 3000,
+      });
+    </script>
 
     <!-- My Script -->
     <script src="dist/js/script.js"></script>
