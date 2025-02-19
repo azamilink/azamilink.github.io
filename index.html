@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
-    <link href="src/output.css" rel="stylesheet" />
+    <link href="dist/output.css" rel="stylesheet" />
 
     <!-- AOS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
@@ -179,7 +179,7 @@
     <!-- Hero Section end -->
 
     <!-- About Section star -->
-    <section id="about" class="w-full pt-36 pb-28 dark:bg-black">
+    <section id="about" class="w-full py-20 dark:bg-black">
       <div class="container mx-auto max-w-7xl">
         <div class="flex flex-wrap">
           <div class="mb-10 w-full px-4 lg:w-1/2">
@@ -299,9 +299,9 @@
           </div>
         </div>
       </div>
-
       <div class="container mx-auto max-w-7xl">
         <div class="flex flex-wrap">
+          <!-- Skill -->
           <div class="mb-10 w-full px-4 lg:w-1/2">
             <div class="w-full py-20">
               <h3 class="text-lg font-bold text-zinc-700 dark:text-white">
@@ -312,65 +312,96 @@
                 untuk pengembangan aplikasi berbasis web, diantaranya:
               </p>
             </div>
-            <div class="flex flex-wrap justify-center gap-2 dark:text-white">
-              <div class="mb-10 w-1/4 lg:w-1/5" data-aos="flip-right">
-                <div class="text-center">
-                  <img src="dist/skill/01.png" alt="skill 1" />
-                  <div>
-                    <p class="text-base">HTML 5</p>
-                  </div>
+            <div class="flex flex-wrap justify-evenly dark:text-white">
+              <div class="mb-10 w-1/2 lg:w-1/4" data-aos="flip-right">
+                <div>
+                  <img
+                    src="dist/skill/01.png"
+                    alt="skill 1"
+                    class="h-30 w-30 rounded-2xl object-cover"
+                  />
+
+                  <p class="mt-5 text-sm font-medium">HTML 5</p>
                 </div>
               </div>
               <div
-                class="mb-10 w-1/4 lg:w-1/5"
+                class="mb-10 w-1/2 lg:w-1/4"
                 data-aos="flip-right"
                 data-aos-delay="500"
               >
-                <div class="text-center">
-                  <img src="dist/skill/02.png" alt="skill 2" />
-                  <div>
-                    <p class="text-base">CSS 3</p>
-                  </div>
+                <div>
+                  <img
+                    src="dist/skill/02.png"
+                    alt="skill 2"
+                    class="h-30 w-30 rounded-2xl object-cover"
+                  />
+
+                  <p class="mt-5 text-sm font-medium">CSS 3</p>
                 </div>
               </div>
               <div
-                class="mb-10 w-1/4 lg:w-1/5"
+                class="mb-10 w-1/2 lg:w-1/4"
                 data-aos="flip-right"
                 data-aos-delay="1000"
               >
-                <div class="text-center">
-                  <img src="dist/skill/03.png" alt="skill 3" />
-                  <div>
-                    <p class="text-base">JavaScript</p>
-                  </div>
+                <div>
+                  <img
+                    src="dist/skill/03.png"
+                    alt="skill 3"
+                    class="h-30 w-30 rounded-2xl object-cover"
+                  />
+
+                  <p class="mt-5 text-sm font-medium">JavaScript</p>
                 </div>
               </div>
               <div
-                class="mb-10 w-1/4 lg:w-1/5"
+                class="mb-10 w-1/2 lg:w-1/4"
                 data-aos="flip-right"
                 data-aos-delay="1000"
               >
-                <div class="text-center">
-                  <img src="dist/skill/04.png" alt="skill 4" />
-                  <div>
-                    <p class="text-base">PHP</p>
-                  </div>
+                <div>
+                  <img
+                    src="dist/skill/04.png"
+                    alt="skill 4"
+                    class="h-30 w-30 rounded-2xl object-cover"
+                  />
+
+                  <p class="mt-5 text-sm font-medium">PHP</p>
                 </div>
               </div>
               <div
-                class="mb-10 w-1/4 lg:w-1/5"
+                class="mb-10 w-1/2 lg:w-1/4"
                 data-aos="flip-right"
                 data-aos-delay="1000"
               >
-                <div class="text-center">
-                  <img src="dist/skill/05.png" alt="skill 5" />
-                  <div>
-                    <p class="text-base">My SQL</p>
-                  </div>
+                <div>
+                  <img
+                    src="dist/skill/05.png"
+                    alt="skill 5"
+                    class="h-30 w-30 rounded-2xl object-cover"
+                  />
+
+                  <p class="mt-5 text-sm font-medium">MY SQL</p>
+                </div>
+              </div>
+              <div
+                class="mb-10 w-1/2 lg:w-1/4"
+                data-aos="flip-right"
+                data-aos-delay="1000"
+              >
+                <div>
+                  <img
+                    src="dist/skill/06.png"
+                    alt="skill 6"
+                    class="h-30 w-30 rounded-2xl object-cover"
+                  />
+
+                  <p class="mt-5 text-sm font-medium">GIT / GITHUB</p>
                 </div>
               </div>
             </div>
           </div>
+          <!-- Favorite stack -->
           <div class="mb-10 w-full px-4 lg:w-1/2">
             <div class="w-full py-20">
               <h3 class="text-lg font-bold text-zinc-700 dark:text-white">
@@ -384,7 +415,11 @@
             <div class="flex flex-wrap justify-center gap-10 dark:text-white">
               <div class="mb-10 w-1/2 lg:w-1/5" data-aos="flip-right">
                 <div class="text-center">
-                  <img src="dist/frame/01.png" alt="frame 1" />
+                  <img
+                    src="dist/frame/01.png"
+                    alt="frame 1"
+                    class="rounded-full"
+                  />
                   <div>
                     <p class="text-base">Tailwind</p>
                   </div>
@@ -396,7 +431,11 @@
                 data-aos-delay="500"
               >
                 <div class="text-center">
-                  <img src="dist/frame/02.png" alt="frame 2" />
+                  <img
+                    src="dist/frame/02.png"
+                    alt="frame 2"
+                    class="rounded-full"
+                  />
                   <div>
                     <p class="text-base">Alpine Js</p>
                   </div>
@@ -408,7 +447,11 @@
                 data-aos-delay="1000"
               >
                 <div class="text-center">
-                  <img src="dist/frame/03.png" alt="frame 3" />
+                  <img
+                    src="dist/frame/03.png"
+                    alt="frame 3"
+                    class="rounded-full"
+                  />
                   <div>
                     <p class="text-base">Laravel</p>
                   </div>
@@ -420,9 +463,45 @@
                 data-aos-delay="1000"
               >
                 <div class="text-center">
-                  <img src="dist/frame/04.png" alt="frame 4" />
+                  <img
+                    src="dist/frame/04.png"
+                    alt="frame 4"
+                    class="rounded-full"
+                  />
                   <div>
                     <p class="text-base">Livewire</p>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="mb-10 w-1/2 lg:w-1/5"
+                data-aos="flip-right"
+                data-aos-delay="1000"
+              >
+                <div class="text-center">
+                  <img
+                    src="dist/frame/05.png"
+                    alt="frame 5"
+                    class="rounded-full"
+                  />
+                  <div>
+                    <p class="text-base">Bootstrap</p>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="mb-10 w-1/2 lg:w-1/5"
+                data-aos="flip-right"
+                data-aos-delay="1000"
+              >
+                <div class="text-center">
+                  <img
+                    src="dist/frame/06.png"
+                    alt="frame 6"
+                    class="rounded-full"
+                  />
+                  <div>
+                    <p class="text-base">Filamnet</p>
                   </div>
                 </div>
               </div>
