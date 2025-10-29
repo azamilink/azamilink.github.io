@@ -65,27 +65,57 @@ const btnLoading = document.querySelector(".btn-loading");
 const myAlert = document.querySelector(".my-alert");
 const btnClose = document.querySelector(".btn-close");
 
+// Wa Contact Form
+const formatMessage = (obj) => {
+  return `Data Customer
+    			Nama: ${obj.name}
+    			Email: ${obj.email}
+    			Pesan: ${obj.pesan}
+    			`;
+};
+
+// Ketika tombol submit ditekan
 form.addEventListener("submit", (e) => {
   e.preventDefault();
-  // Ketika tombol submit di klik
-  // Tampilkan tombol loading, hilangkan tombol kirim
-  btnLoading.classList.toggle("hidden");
-  btnKirim.classList.toggle("hidden");
 
-  fetch(scriptURL, { method: "POST", body: new FormData(form) })
-    .then((response) => {
-      // Tampilkan tombol loading, hilangkan tombol kirim
-      btnLoading.classList.toggle("hidden");
-      btnKirim.classList.toggle("hidden");
-      // Tamplikan Alert
-      myAlert.classList.toggle("hidden");
-      // Reset Form-nya
-      form.reset();
+  const formData = new FormData(form);
 
-      console.log("Success!", response);
-    })
-    .catch((error) => console.error("Error!", error.message));
+  const ObjData = {
+    name: formData.get("nama"),
+    email: formData.get("email"),
+    pesan: formData.get("pesan"),
+  };
+
+  const sendData = formatMessage(ObjData);
+
+  window.open(
+    "http://wa.me/6281253428575?text=" + encodeURIComponent(sendData),
+  );
+
+  form.reset();
 });
+
+// Ketika tombol submit di klik
+// form.addEventListener("submit", (e) => {
+//   e.preventDefault();
+//   // Tampilkan tombol loading, hilangkan tombol kirim
+//   btnLoading.classList.toggle("hidden");
+//   btnKirim.classList.toggle("hidden");
+
+//   fetch(scriptURL, { method: "POST", body: new FormData(form) })
+//     .then((response) => {
+//       // Tampilkan tombol loading, hilangkan tombol kirim
+//       btnLoading.classList.toggle("hidden");
+//       btnKirim.classList.toggle("hidden");
+//       // Tamplikan Alert
+//       myAlert.classList.toggle("hidden");
+//       // Reset Form-nya
+//       form.reset();
+
+//       console.log("Success!", response);
+//     })
+//     .catch((error) => console.error("Error!", error.message));
+// });
 
 btnClose.addEventListener("click", function () {
   myAlert.classList.toggle("hidden");
